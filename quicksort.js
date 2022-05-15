@@ -8,10 +8,8 @@ function quicksort(arr) {
     for (let i = 1; i < arr.length; i++) {
       if (arr[i] < pivot) {
         less.push(arr[i]);
-        console.log('less', less);
       } else {
         greater.push(arr[i]);
-        console.log('greater', greater);
       }
     }
     return quicksort(less).concat(pivot).concat(quicksort(greater))
