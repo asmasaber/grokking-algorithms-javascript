@@ -28,7 +28,7 @@ function recursiveBinarySearch(list, item, start = 0, end = list.length -1) {
         } else {
           start = mid + 1;
         }
-        return binarySearch(list, item, start, end)
+        return recursiveBinarySearch(list, item, start, end)
     }
   }
   return -1;
